@@ -1,3 +1,10 @@
+# Installation
+
+```
+$ npm install
+$ npm run start
+```
+
 # Important Notes
 
 ## MongoDB Query Operators
