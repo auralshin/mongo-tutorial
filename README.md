@@ -5,6 +5,17 @@ $ npm install
 $ npm run start
 ```
 
+## Folder Structure
+
+```
+index.js file in the root folder is the main file which connects with mongoDB
+config/ - contains configuration files for different environments like development and production etc...
+schema/ - Contains Mongoose schema used by controllers (Student schema)
+routes/ - Controllers handles HTTP requests from routes using services
+service/ - contains functions used by APIs for processing request
+middlewares/ - contains middlewares consumed by routes/api.js
+```
+
 # Important Notes
 
 ## MongoDB Query Operators

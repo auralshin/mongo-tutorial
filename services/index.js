@@ -86,8 +86,14 @@ async function findStudentById(id) {
  * @returns {Promise<Array>} A promise that resolves to an array of all students in the 'Student' collection.
  */
 async function findAllStudents() {
-  const students = await Student.find();
-  return students;
+  try {
+
+    const students = await Student.find();
+    return students;
+  } catch(err) {
+    console.log(err)
+    return null;
+  }
 }
 
 /**
